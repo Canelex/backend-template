@@ -3,6 +3,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import logger from './utils/logger.js'
 import config from './utils/config.js'
+import './utils/passport.js'
 
 // Create express server
 const app = express()
