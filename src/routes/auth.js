@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import logger from '../utils/logger.js';
 import config from '../utils/config.js';
 import { validateAuthSignup, validateAuthLogin } from '../utils/validator.js';
-import { Account, comparePassword, createAccount, getAccountByEmail, getAccountByUsername } from '../models/Account.js';
+import { Account, comparePassword, createAccount, getAccountByEmail, getAccountByUsername } from '../models/account.js';
 
 const router = express.Router();
 
