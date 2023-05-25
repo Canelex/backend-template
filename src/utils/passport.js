@@ -1,6 +1,6 @@
 import passport from 'passport';
 import passportJwt from 'passport-jwt';
-import { getAccountById } from '../models/Account.js';
+import { getAccountById } from '../models/account.js';
 import config from './config.js';
 
 // Setup options
