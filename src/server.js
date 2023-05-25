@@ -24,6 +24,7 @@ app.use((err, req, res, next) => {
 
 // Setup routes
 app.use('/api/auth', authRoute)
+// TODO: add more routes here
 
 // Connect to mongodb
 mongoose.connect(config('MONGO_URI', 'mongodb://127.0.0.1/exampledb')).then(() => {
