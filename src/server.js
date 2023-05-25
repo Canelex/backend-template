@@ -3,6 +3,7 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import logger from './utils/logger.js'
 import config from './utils/config.js'
+import authRoute from './routes/auth.js'
 import './utils/passport.js'
 
 // Create express server
@@ -20,6 +21,9 @@ app.use((err, req, res, next) => {
     })
   }
 })
+
+// Setup routes
+app.use('/api/auth', authRoute)
 
 // Connect to mongodb
 mongoose.connect(config('MONGO_URI', 'mongodb://127.0.0.1/exampledb')).then(() => {
